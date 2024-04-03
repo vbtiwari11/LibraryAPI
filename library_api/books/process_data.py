@@ -36,7 +36,7 @@ def get_data_from_df(type,userrprofile):
 def borrow_book(user_id, title):
     if user_id.startswith('S'):  # Student
         if user_id not in borrowing_df['User ID'].values and len(
-                borrowing_df[borrowing_df['User ID'] == user_id]) == 2:
+                borrowing_df[borrowing_df['User ID'] == user_id]) == 10:
             return "You have already borrowed maximum number of books."
 
     if title not in library_df['Title'].values or library_df.loc[library_df['Title'] == title, 'Available Copies'].iloc[
