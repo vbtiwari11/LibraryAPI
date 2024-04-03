@@ -1,0 +1,4 @@
+userid,bookname,borrow_date,userprofile
+1,'little life',2024-04-01,student
+2,'day out',2024-03-31,student
+3,'little life',2024-03-01,librarian
